@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GitHub Advanced Security and quality scanning demo">
+    <title>GHAS + Quality Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <nav>
+        <a class="brand" href="https://github.com/haslam93/GHASDemo2026">GHAS Demo 2026</a>
+        <a class="button secondary" href="https://github.com/haslam93/GHASDemo2026/actions">View Actions</a>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">SECURE AT EVERY STAGE</p>
+        <h1>Find risk earlier.<br><span>Ship with confidence.</span></h1>
+        <p class="lede">A live, intentionally vulnerable repository showing how GitHub brings code, dependency, secret, and quality signals into one developer workflow.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/haslam93/GHASDemo2026/security">Open Security Overview</a>
+          <a class="text-link" href="https://github.com/haslam93/GHASDemo2026">Browse the repository &rarr;</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <p class="eyebrow">ONE PLATFORM, FOUR SIGNALS</p>
+        <h2>Security feedback where developers already work</h2>
+        <p>Each card opens the corresponding live GitHub experience. The findings are deliberate, synthetic, and safe for training.</p>
+      </section>
+
+      <section class="cards" aria-label="Demo capabilities">
+        <article class="card code">
+          <div class="icon">&lt;/&gt;</div>
+          <p class="number">01</p>
+          <h3>Code scanning</h3>
+          <p>CodeQL traces untrusted request data into command execution, SQL, HTML, redirects, and file paths.</p>
+          <a href="https://github.com/haslam93/GHASDemo2026/security/code-scanning">Explore CodeQL alerts &rarr;</a>
+        </article>
+
+        <article class="card dependency">
+          <div class="icon">DEP</div>
+          <p class="number">02</p>
+          <h3>Dependabot</h3>
+          <p>Known-vulnerable npm versions populate the dependency graph, alerts, and automated security updates.</p>
+          <a href="https://github.com/haslam93/GHASDemo2026/security/dependabot">Review dependency alerts &rarr;</a>
+        </article>
+
+        <article class="card secret">
+          <div class="icon">***</div>
+          <p class="number">03</p>
+          <h3>Secret scanning</h3>
+          <p>A fake token in Git history demonstrates detection and remediation without exposing a real credential.</p>
+          <a href="https://github.com/haslam93/GHASDemo2026/security/secret-scanning">Inspect secret alerts &rarr;</a>
+        </article>
+
+        <article class="card quality">
+          <div class="icon">OK</div>
+          <p class="number">04</p>
+          <h3>Quality gates</h3>
+          <p>Tests, npm audit, dependency review, and protected automation provide fast pull-request feedback.</p>
+          <a href="https://github.com/haslam93/GHASDemo2026/actions">See quality workflows &rarr;</a>
+        </article>
+      </section>
+
+      <section class="flow">
+        <div>
+          <p class="eyebrow">DEMO STORY</p>
+          <h2>From commit to fix</h2>
+        </div>
+        <ol>
+          <li><span>1</span><strong>Commit</strong><small>Developer pushes code and dependencies.</small></li>
+          <li><span>2</span><strong>Detect</strong><small>GitHub correlates code, package, and secret risk.</small></li>
+          <li><span>3</span><strong>Prioritize</strong><small>Alerts include severity, reachability, and data flow.</small></li>
+          <li><span>4</span><strong>Remediate</strong><small>Developers fix in a pull request with automated checks.</small></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built as a safe training fixture for GitHub Advanced Security.</p>
+      <a href="https://docs.github.com/code-security">GitHub security documentation &rarr;</a>
+    </footer>
+  </body>
+</html>
