@@ -26,7 +26,7 @@
 
     <main>
       <section class="intro">
-        <p class="eyebrow">ONE PLATFORM, FOUR SIGNALS</p>
+        <p class="eyebrow">ONE PLATFORM, FIVE SIGNALS</p>
         <h2>Security feedback where developers already work</h2>
         <p>Each card opens the corresponding live GitHub experience. The findings are deliberate, synthetic, and safe for training.</p>
       </section>
@@ -63,6 +63,43 @@
           <p>Tests, npm audit, dependency review, and protected automation provide fast pull-request feedback.</p>
           <a href="https://github.com/haslam93/GHASDemo2026/actions">See quality workflows &rarr;</a>
         </article>
+
+        <article class="card malware">
+          <div class="icon">LAB</div>
+          <p class="number">05</p>
+          <h3>Malware simulation</h3>
+          <p>A safe custom SARIF result demonstrates suspicious behavior detection without storing or executing malware.</p>
+          <a href="https://github.com/haslam93/GHASDemo2026/security/code-scanning">Open the synthetic alert &rarr;</a>
+        </article>
+      </section>
+
+      <section class="autofix">
+        <div class="autofix-copy">
+          <p class="eyebrow">COPILOT AUTOFIX</p>
+          <h2>From explanation to pull request</h2>
+          <p>For eligible CodeQL findings, Copilot Autofix combines the rule, data-flow path, and surrounding source to propose a focused fix. The developer reviews the explanation and diff, edits if needed, and opens a pull request. CodeQL and the quality workflow then validate the change.</p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/haslam93/GHASDemo2026/security/code-scanning">Choose an alert to fix</a>
+            <a class="text-link" href="https://docs.github.com/code-security/code-scanning/managing-code-scanning-alerts/responsible-use-autofix-code-scanning">How Autofix works &rarr;</a>
+          </div>
+        </div>
+        <div class="autofix-grid">
+          <div><span>1</span><strong>Open an alert</strong><small>Choose command injection, SQL injection, or reflected XSS.</small></div>
+          <div><span>2</span><strong>Generate fix</strong><small>Review the AI-generated explanation and suggested patch.</small></div>
+          <div><span>3</span><strong>Create a PR</strong><small>Keep the developer in control of edits and approval.</small></div>
+          <div><span>4</span><strong>Validate</strong><small>Re-run CodeQL, tests, audit, and dependency review.</small></div>
+        </div>
+      </section>
+
+      <section class="live-demo">
+        <p class="eyebrow">CLICK-THROUGH DEMO</p>
+        <h2>Use the alerts that are already here</h2>
+        <div class="demo-links">
+          <a href="https://github.com/haslam93/GHASDemo2026/security/code-scanning"><strong>CodeQL + Autofix</strong><span>Open a data-flow alert and select Generate fix.</span></a>
+          <a href="https://github.com/haslam93/GHASDemo2026/pulls?q=is%3Apr+author%3Aapp%2Fdependabot"><strong>Dependabot PRs</strong><span>Show the secure version bump and passing checks.</span></a>
+          <a href="https://github.com/haslam93/GHASDemo2026/security/secret-scanning"><strong>Secret alerts</strong><span>Show synthetic bypass history and enabled push protection.</span></a>
+          <a href="https://github.com/haslam93/GHASDemo2026/security/code-scanning"><strong>Malware SARIF</strong><span>Show how partner tools share the code-scanning experience.</span></a>
+        </div>
       </section>
 
       <section class="flow">
@@ -80,7 +117,7 @@
     </main>
 
     <footer>
-      <p>Built as a safe training fixture for GitHub Advanced Security.</p>
+      <p>Built as a safe training fixture. No real secrets or malware are included.</p>
       <a href="https://docs.github.com/code-security">GitHub security documentation &rarr;</a>
     </footer>
   </body>
